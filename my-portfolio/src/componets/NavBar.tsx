@@ -1,5 +1,5 @@
-import { ArrowRight, Icon } from "lucide-react";
 import { MessageCircle } from "lucide-react";
+
 interface NavBarProps {
   onContactClick: () => void;
 }
@@ -26,7 +26,7 @@ export function NavBar({ onContactClick }: NavBarProps) {
             </ul>
           </div>
 
-          {/* Mobile */}
+          {/* Mobile Menu Placeholder */}
           <div className="lg:hidden">
             <button className="text-slate-900">
               <svg

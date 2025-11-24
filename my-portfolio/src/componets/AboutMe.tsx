@@ -1,17 +1,10 @@
-import {
-  Code2,
-  Palette,
-  Database,
-  Zap,
-  Layout,
-  Smartphone,
-} from "lucide-react";
+import { Code2, Database, Layout, Zap } from "lucide-react"; // removed unused Palette, Smartphone
 
 const skills = [
   { icon: Code2, name: "React & Next.js", color: "from-blue-500 to-cyan-500" },
   {
     icon: Database,
-    name: "Node.js,Nest.js & APIs",
+    name: "Node.js, Nest.js & APIs",
     color: "from-green-500 to-emerald-500",
   },
   {
@@ -54,7 +47,6 @@ export function AboutMe() {
             style={{ animationDelay: "0.4s" }}
           >
             <div className="relative bg-gradient-to-br from-white via-purple-50/20 to-blue-50/20 backdrop-blur-md rounded-3xl p-10 border border-slate-200 shadow-2xl hover:shadow-purple-300/40 transition-all duration-700">
-              {/* Light glow on hover */}
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-purple-200/0 to-blue-200/0 group-hover:from-purple-200/40 group-hover:to-blue-200/40 opacity-0 group-hover:opacity-100 transition duration-700"></div>
 
               <div className="relative flex flex-col items-center text-center space-y-6">
@@ -69,11 +61,7 @@ export function AboutMe() {
                       className="object-cover"
                     />
                   </div>
-
-                  {/* Animated ring */}
                   <div className="absolute inset-0 rounded-full border-2 border-purple-300/40 animate-spin-slow"></div>
-
-                  {/* Status Badge */}
                   <div className="absolute bottom-3 right-3 w-8 h-8 bg-green-500 rounded-full border-4 border-white shadow-lg animate-pulse"></div>
                 </div>
 
@@ -101,7 +89,6 @@ export function AboutMe() {
                       yordanoselluwork@gmail.com
                     </span>
                   </div>
-
                   <div className="flex items-center justify-center gap-3 px-4 py-3 bg-blue-50 rounded-xl animate-fade-in">
                     <span>📍</span>
                     <span className="text-slate-700">
@@ -136,9 +123,7 @@ export function AboutMe() {
                     key={index}
                     className="group relative bg-white rounded-2xl p-6 border border-slate-200 shadow-lg hover:shadow-2xl hover:border-purple-300 transition-all duration-500 hover:-translate-y-2"
                   >
-                    {/* Glow overlay */}
                     <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-purple-100/0 to-blue-100/0 group-hover:from-purple-100/50 group-hover:to-blue-100/50 transition-all duration-500"></div>
-
                     <div className="relative flex flex-col items-center text-center gap-3">
                       <div
                         className={`w-12 h-12 rounded-xl bg-gradient-to-br ${skill.color} flex items-center justify-center shadow-xl group-hover:scale-125 transition-all duration-500 animate-pulse-slow`}
@@ -159,27 +144,10 @@ export function AboutMe() {
 
       {/* Custom animations */}
       <style>{`
-        @keyframes float {
-          0% { transform: translateY(0px); }
-          50% { transform: translateY(-14px); }
-          100% { transform: translateY(0px); }
-        }
-
-        @keyframes glow {
-          0%, 100% { box-shadow: 0 0 15px rgba(168, 85, 247, 0.3); }
-          50% { box-shadow: 0 0 30px rgba(147, 51, 234, 0.5); }
-        }
-
-        @keyframes fadeUp {
-          from { opacity: 0; transform: translateY(30px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes spinSlow {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
-        }
-
+        @keyframes float {0% { transform: translateY(0px); } 50% { transform: translateY(-14px); } 100% { transform: translateY(0px); }}
+        @keyframes glow {0%,100% { box-shadow: 0 0 15px rgba(168,85,247,0.3); } 50% { box-shadow: 0 0 30px rgba(147,51,234,0.5); }}
+        @keyframes fadeUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+        @keyframes spinSlow { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
         .animate-float { animation: float 6s ease-in-out infinite; }
         .animate-glow { animation: glow 4s ease-in-out infinite; }
         .animate-fade-up { animation: fadeUp 1.2s ease forwards; }

@@ -1,7 +1,16 @@
-import { ExternalLink, Github } from "lucide-react";
+import { Github } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 
-const projects = [
+interface Project {
+  title: string;
+  description: string;
+  image: string;
+  tags: string[];
+  gradient: string;
+  github: string;
+}
+
+const projects: Project[] = [
   {
     title: "E-Commerce Platform",
     description:
@@ -91,7 +100,6 @@ export function FeaturedProjects() {
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                {/* Gradient Overlay */}
                 <div
                   className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-500 rounded-t-3xl`}
                 ></div>
@@ -120,16 +128,6 @@ export function FeaturedProjects() {
 
                 {/* Action Buttons */}
                 <div className="flex gap-4">
-                  {/* <a
-                    // href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex-1 px-4 py-3 bg-gradient-to-r ${project.gradient} text-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2`}
-                  >
-                    Live Demo
-                    <ExternalLink className="w-4 h-4" />
-                  </a> */}
-
                   <a
                     href={project.github}
                     target="_blank"

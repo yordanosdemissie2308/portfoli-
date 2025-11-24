@@ -1,17 +1,17 @@
-import { Github, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 export function SocialLinks() {
   const socialLinks = [
     {
       name: "GitHub",
       icon: Github,
-      url: "#",
+      url: "https://github.com/yordanosdemissie2308/",
       gradient: "from-gray-700 to-gray-900",
     },
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "#",
+      url: "https://www.linkedin.com/in/yordanos-demissie-80379a358/",
       gradient: "from-blue-600 to-blue-700",
     },
   ];
