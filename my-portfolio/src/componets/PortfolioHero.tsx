@@ -72,7 +72,7 @@ export function PortfolioHero({ onContactClick }: PortfolioHeroProps) {
           <div className="relative">
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-white/90 to-purple-50/40 backdrop-blur-xl border border-white/50 shadow-2xl shadow-purple-500/20 p-8">
-                <img src="/public/pic23.png" />
+                <img src="/pic23.png" />
               </div>
 
               <div className="absolute -top-8 -left-8 w-32 h-32 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-3xl shadow-2xl opacity-80 animate-pulse"></div>
