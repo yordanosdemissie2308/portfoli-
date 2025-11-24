@@ -5,19 +5,19 @@ export function ContactInfoCards() {
     {
       icon: Mail,
       label: "Email",
-      value: "hello@yourname.com",
+      value: "yordanoselluwork@gmail.com",
       gradient: "from-blue-500 to-blue-600",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "+(251) 919334467",
       gradient: "from-purple-500 to-purple-600",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Addis Ababa, Ethiopia",
       gradient: "from-blue-600 to-purple-600",
     },
   ];

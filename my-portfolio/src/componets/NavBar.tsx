@@ -1,10 +1,13 @@
-import { MessageCircle } from "lucide-react";
+import { Icon, MessageCircle, X } from "lucide-react";
+import { useState } from "react";
 
 interface NavBarProps {
   onContactClick: () => void;
 }
 
 export function NavBar({ onContactClick }: NavBarProps) {
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className="fixed w-full top-0 left-0 z-50 bg-white/70 backdrop-blur-md shadow-md">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -26,20 +29,24 @@ export function NavBar({ onContactClick }: NavBarProps) {
             </ul>
           </div>
 
-          {/* Mobile Menu Placeholder */}
+          {/* Mobile Menu Button */}
           <div className="lg:hidden">
-            <button className="text-slate-900">
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                viewBox="0 0 24 24"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
+            <button className="text-slate-900" onClick={() => setOpen(!open)}>
+              {open ? (
+                <MessageCircle className="w-6 h-6" onClick={onContactClick} />
+              ) : (
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
             </button>
           </div>
         </div>

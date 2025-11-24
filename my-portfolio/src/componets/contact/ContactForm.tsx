@@ -46,7 +46,7 @@ export function ContactForm() {
                 onChange={handleChange}
                 required
                 className="w-full px-6 py-4 bg-white/50 border border-gray-200 rounded-[20px] focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent transition-all duration-300 placeholder:text-gray-400"
-                placeholder="John Doe"
+                placeholder="Your Name"
               />
             </div>
 
@@ -62,7 +62,7 @@ export function ContactForm() {
                 onChange={handleChange}
                 required
                 className="w-full px-6 py-4 bg-white/50 border border-gray-200 rounded-[20px] focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent transition-all duration-300 placeholder:text-gray-400"
-                placeholder="john@example.com"
+                placeholder="your@example.com"
               />
             </div>
           </div>
