@@ -26,10 +26,10 @@ export function PortfolioFooter() {
               insights into my creative process.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            {/* <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
                 type="email"
-                placeholder="your.email@example.com"
+                placeholder=""
                 className="flex-1 px-6 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl text-white placeholder-purple-300 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/50 transition-all"
               />
               <button className="group px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl shadow-lg hover:shadow-xl hover:shadow-purple-500/40 hover:scale-105 transition-all duration-300">
@@ -38,7 +38,7 @@ export function PortfolioFooter() {
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -47,9 +47,7 @@ export function PortfolioFooter() {
           {/* Brand Column */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
-                <span className="text-white text-2xl">Y</span>
-              </div>
+              <div className="w-12 h-12 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg"></div>
               <div>
                 <div className="text-white">Yordanos</div>
                 <div className="text-sm text-purple-300">
@@ -63,28 +61,28 @@ export function PortfolioFooter() {
             {/* Social Links */}
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/yordanos-demissie-80379a358/"
                 className="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/20 hover:bg-white/20 hover:border-purple-400 hover:scale-110 transition-all duration-300"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5 text-purple-200" />
               </a>
               <a
-                href="#"
+                href="https://github.com/yordanosdemissie2308/"
                 className="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/20 hover:bg-white/20 hover:border-purple-400 hover:scale-110 transition-all duration-300"
                 aria-label="GitHub"
               >
                 <Github className="w-5 h-5 text-purple-200" />
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/20 hover:bg-white/20 hover:border-purple-400 hover:scale-110 transition-all duration-300"
                 aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5 text-purple-200" />
-              </a>
+              > */}
+              {/* <Twitter className="w-5 h-5 text-purple-200" />
+              </a> */}
               <a
-                href="#"
+                href="yordanoselluwork@gmail.com"
                 className="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center border border-white/20 hover:bg-white/20 hover:border-purple-400 hover:scale-110 transition-all duration-300"
                 aria-label="Email"
               >
@@ -115,7 +113,7 @@ export function PortfolioFooter() {
               </li>
               <li>
                 <a
-                  href="#process"
+                  href="./componets/HowItWorks.tsx"
                   className="text-purple-200 hover:text-white transition-colors"
                 >
                   Work Process
@@ -123,7 +121,7 @@ export function PortfolioFooter() {
               </li>
               <li>
                 <a
-                  href="#testimonials"
+                  href="./componets/Testimonials.tsx"
                   className="text-purple-200 hover:text-white transition-colors"
                 >
                   Testimonials
@@ -133,7 +131,7 @@ export function PortfolioFooter() {
           </div>
 
           {/* Services */}
-          <div>
+          {/* <div>
             <h4 className="mb-4 text-white">Services</h4>
             <ul className="space-y-3">
               <li>
@@ -146,7 +144,7 @@ export function PortfolioFooter() {
               </li>
               <li>
                 <a
-                  href="#services"
+                  href=""
                   className="text-purple-200 hover:text-white transition-colors"
                 >
                   UI/UX Design
@@ -169,7 +167,7 @@ export function PortfolioFooter() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact */}
           <div>
@@ -181,17 +179,19 @@ export function PortfolioFooter() {
                   href="mailto:yordanos@email.com"
                   className="text-purple-200 hover:text-white transition-colors"
                 >
-                  yordanos@email.com
+                  yordanoselluwork@gmail.com{" "}
                 </a>
               </li>
-              <li className="text-purple-200 text-sm">📍 San Francisco, CA</li>
+              <li className="text-purple-200 text-sm">
+                📍 Adiss Abeba ,Ethiopia
+              </li>
               <li className="text-purple-200 text-sm">
                 Available for freelance work
               </li>
             </ul>
-            <button className="mt-6 px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl text-purple-200 hover:bg-white/20 hover:text-white hover:border-purple-400 transition-all duration-300">
+            {/* <button className="mt-6 px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl text-purple-200 hover:bg-white/20 hover:text-white hover:border-purple-400 transition-all duration-300">
               Download CV
-            </button>
+            </button> */}
           </div>
         </div>
 
@@ -208,7 +208,7 @@ export function PortfolioFooter() {
               <span>and lots of coffee</span>
             </div>
 
-            <div className="flex gap-6 text-sm">
+            {/* <div className="flex gap-6 text-sm">
               <a
                 href="#"
                 className="text-purple-200 hover:text-white transition-colors"
@@ -221,7 +221,7 @@ export function PortfolioFooter() {
               >
                 Terms of Use
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

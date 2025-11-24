@@ -1,45 +1,34 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Icon } from "lucide-react";
+import { MessageCircle } from "lucide-react";
+interface NavBarProps {
+  onContactClick: () => void;
+}
 
-export function Navbar() {
+export function NavBar({ onContactClick }: NavBarProps) {
   return (
     <nav className="fixed w-full top-0 left-0 z-50 bg-white/70 backdrop-blur-md shadow-md">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Logo / Brand */}
+          {/* Logo */}
           <div className="text-2xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">
             Yordanos Demissie
           </div>
 
           {/* Desktop Menu */}
-          <ul className="hidden lg:flex gap-8 text-slate-900 font-medium">
-            <li className="hover:text-indigo-600 transition-colors cursor-pointer">
-              Home
-            </li>
-            <li className="hover:text-indigo-600 transition-colors cursor-pointer">
-              About
-            </li>
-            <li className="hover:text-indigo-600 transition-colors cursor-pointer">
-              Projects
-            </li>
-            <li className="hover:text-indigo-600 transition-colors cursor-pointer">
-              Skills
-            </li>
-            <li className="hover:text-indigo-600 transition-colors cursor-pointer">
-              Contact
-            </li>
-          </ul>
-
-          {/* Call-to-action button */}
-          <div className="hidden lg:flex">
-            <button className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-2xl shadow-lg shadow-purple-500/30 hover:shadow-xl hover:scale-105 transition-all duration-300">
-              Hire Me <ArrowRight className="w-4 h-4" />
-            </button>
+          <div className="hidden lg:flex items-center gap-10">
+            <ul className="flex gap-8 text-slate-900 font-medium">
+              <li
+                className="hover:text-indigo-600 transition-colors cursor-pointer rounded-2xl shadow-2xs text-2xl px-3 py-2 text-blue-500"
+                onClick={onContactClick}
+              >
+                <MessageCircle className="w-6 h-6" />
+              </li>
+            </ul>
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile */}
           <div className="lg:hidden">
             <button className="text-slate-900">
-              {/* Hamburger icon */}
               <svg
                 className="w-6 h-6"
                 fill="none"

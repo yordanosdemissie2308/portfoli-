@@ -37,11 +37,8 @@ export function WorkProcess() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <div className="inline-block px-4 py-2 bg-purple-50 rounded-full mb-4">
-            <span className="text-sm text-purple-700">Process</span>
-          </div>
+          <div className="inline-block px-4 py-2 bg-purple-50 rounded-full mb-4"></div>
           <h2 className="mb-6 bg-gradient-to-r from-slate-900 to-purple-900 bg-clip-text text-transparent">
             How I Work
           </h2>

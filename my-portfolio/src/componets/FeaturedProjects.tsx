@@ -11,7 +11,6 @@ const projects = [
     tags: ["React", "Tailwind CSS", "TypeScript", "Firebase"],
     gradient: "from-blue-500 to-cyan-500",
     github: "https://github.com/yourusername/ecommerce-platform",
-    live: "#",
   },
   {
     title: "Analytics Dashboard",
@@ -22,7 +21,6 @@ const projects = [
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
     gradient: "from-purple-500 to-pink-500",
     github: "https://github.com/yourusername/analytics-dashboard",
-    live: "#",
   },
   {
     title: "Bingo Game App",
@@ -31,8 +29,7 @@ const projects = [
     image: "pic3.png",
     tags: ["Nest.js", "Firebase", "TypeScript"],
     gradient: "from-green-500 to-emerald-500",
-    github: "https://github.com/yourusername/bingo-game-app",
-    live: "#",
+    github: "https://github.com/yordanosdemissie2308/Bingo-Game",
   },
   {
     title: "Task Tracker App",
@@ -42,8 +39,7 @@ const projects = [
       "https://images.unsplash.com/photo-1581091215360-6b3b25c23b47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080&q=80",
     tags: ["Nest.js", "Next.js", "Postgres", "Tailwind CSS"],
     gradient: "from-orange-500 to-red-500",
-    github: "https://github.com/yourusername/task-tracker-app",
-    live: "#",
+    github: "https://github.com/yordanosdemissie2308/TaskTrackerApp",
   },
   {
     title: "Online Pharma Store",
@@ -54,7 +50,6 @@ const projects = [
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase"],
     gradient: "from-indigo-500 to-purple-500",
     github: "https://github.com/yourusername/online-pharma-store",
-    live: "#",
   },
 ];
 
@@ -125,15 +120,15 @@ export function FeaturedProjects() {
 
                 {/* Action Buttons */}
                 <div className="flex gap-4">
-                  <a
-                    href={project.live}
+                  {/* <a
+                    // href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`flex-1 px-4 py-3 bg-gradient-to-r ${project.gradient} text-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2`}
                   >
                     Live Demo
                     <ExternalLink className="w-4 h-4" />
-                  </a>
+                  </a> */}
 
                   <a
                     href={project.github}
