@@ -1,4 +1,4 @@
-import { Icon, MessageCircle, X } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import { useState } from "react";
 
 interface NavBarProps {
